@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive DOM FAQ Explorer</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <h3>Topics</h3>
+        <ul>
+            <li><a href="#element-section">Element Section</a></li>
+            <li><a href="#element-creation">Element Creation & Insertion</a></li>
+            <li><a href="#element-modification">Element Modification</a></li>
+            <li><a href="#attributes-classes">Attributes & Classes</a></li>
+            <li><a href="#dom-traversal">DOM Traversal</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#utilities">Miscellaneous / Utilities</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>Interactive DOM FAQ Explorer</h2>
+
+        <!-- Section 1: Element Section -->
+        <div id="element-section">
+            <h3>Element Section</h3>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq1" class="toggle" />
+                <label for="faq1" class="faq-header">
+                    <span>1. What does 'document.querySelector()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'document.querySelector()' returns the first element within the document that matches the specified
+                    CSS selector.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq2" class="toggle" />
+                <label for="faq2" class="faq-header">
+                    <span>2. What does 'document.querySelectorAll()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'document.querySelectorAll()' returns a static NodeList of all elements that match the specified CSS
+                    selector.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq3" class="toggle" />
+                <label for="faq3" class="faq-header">
+                    <span>3. What does 'document.getElementById()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'document.getElementById()' returns the element with the specified ID attribute value.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq4" class="toggle" />
+                <label class="faq-header" for="faq4">
+                    <span>4. What does 'document.getElementsByClassName()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'document.getElementsByClassName()' returns a live HTML Collection of all elements with the
+                    specified class name.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq5" class="toggle" />
+                <label for="faq5" class="faq-header">
+                    <span>5. What does 'document.getElementsByTagName()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'document.getElementsByTagName()' returns a live HTML Collection of all elements with the specified
+                    tag name.
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Element Creation and Insertion -->
+        <div id="element-creation">
+            <h3>Element Creation & Insertion</h3>
+
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq6" class="toggle" />
+                <label for="faq6" class="faq-header">
+                    <span>6. What does 'document.createElement()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'document.createElement()' creates a new HTML element specified by tagName.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq7" class="toggle" />
+                <label for="faq7" class="faq-header">
+                    <span>7. What does 'element.appendChild()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.appendChild()' adds a node to the end of the list of children of a specified parent node.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq8" class="toggle" />
+                <label for="faq8" class="faq-header">
+                    <span>8. What does 'element.removeChild()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.removeChild()' removes a child node from the DOM and returns the removed node.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq9" class="toggle" />
+                <label for="faq9" class="faq-header">
+                    <span>9. What does 'element.replaceChild()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.replaceChild()' replaces a child node within a specified parent node with a new node.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq10" class="toggle" />
+                <label for="faq10" class="faq-header">
+                    <span>10. What does 'document.createTextNode()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'document.createTextNode()' creates a new text node that can be inserted into the DOM using methods
+                    like 'appendChild()'.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq11" class="toggle" />
+                <label for="faq11" class="faq-header">
+                    <span>11. What does 'element.insertBefore()'' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.insertBefore()' inserts a new child node before a specified existing child node of the
+                    parent.
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Element Modification -->
+        <div id="element-modification">
+            <h3>Element Modification</h3>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq12" class="toggle" />
+                <label for="faq12" class="faq-header">
+                    <span>12. What does 'element.innerHTML' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.innerHTML' gets or sets the HTML content of an element, allowing you to modify the content
+                    dynamically.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq13" class="toggle" />
+                <label for="faq13" class="faq-header">
+                    <span>13. What does 'element.textContent' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.textContent' gets or sets the text content of an element and its descendants, providing a
+                    way to read or update the
+                    textual content.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq14" class="toggle" />
+                <label for="faq14" class="faq-header">
+                    <span>14. What does 'element.remove()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.remove()' removes the element from the DOM directly, without needing to call removeChild()
+                    on its parent.
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Attributes & Classes -->
+        <div id="attributes-classes">
+            <h3>Attributes and Classes</h3>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq15" class="toggle" />
+                <label for="faq15" class="faq-header">
+                    <span>15. What does 'element.setAttribute()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.setAttribute()' adds a new attribute or changes the value of an existing attribute on the
+                    specified element.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq16" class="toggle" />
+                <label for="faq16" class="faq-header">
+                    <span>16. What does 'element.getAttribute()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.getAttribute()' returns the value of a specified attribute on the element.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq17" class="toggle" />
+                <label for="faq17" class="faq-header">
+                    <span>17. What does 'element.removeAttribute()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.removeAttribute()' removes an attribute from the specified element.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq18" class="toggle" />
+                <label for="faq18" class="faq-header">
+                    <span>18. What does 'element.classList.add()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.classList.add()' adds one or more class names to an element.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq19" class="toggle" />
+                <label for="faq19" class="faq-header">
+                    <span>19. What does 'element.classList.remove()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.classList.remove()' removes one or more class names from an element.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq20" class="toggle" />
+                <label for="faq20" class="faq-header">
+                    <span>20. What does 'element.classList.toggle()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.classList.toggle()' adds a class if it is not present and removes it if it is.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq21" class="toggle" />
+                <label for="faq21" class="faq-header">
+                    <span>21. What does 'element.classList.contains()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.classList.contains()' checks if an element has a specified class and returns a boolean
+                    value.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq22" class="toggle" />
+                <label for="faq22" class="faq-header">
+                    <span>22. What does 'element.hasAttribute()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.hasAttribute()' returns a boolean indicating whether the element has the specified
+                    attribute.
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 5: Traversing the DOM -->
+        <div id="dom-traversal">
+            <h3>DOM Traversal</h3>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq23" class="toggle" />
+                <label for="faq23" class="faq-header">
+                    <span>23. What is the difference between 'element.children' and 'element.childNodes'?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.children' returns only element nodes, while 'element.childNodes' includes all child nodes
+                    (including text and comment nodes).
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq24" class="toggle" />
+                <label for="faq24" class="faq-header">
+                    <span>24. What is the use of 'element.parentNode' and 'element.parentElement' in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    Both 'element.parentNode' and 'element.parentElement' return the parent of the specified element.
+                    'element.parentElement' specifically returns only an element node.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq25" class="toggle" />
+                <label for="faq25" class="faq-header">
+                    <span>25. What is the difference between 'element.firstChild' and
+                        'element.firstElementChild'?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.firstChild' can return any node (including text), while 'element.firstElementChild' returns
+                    only the first child
+                    element.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq26" class="toggle" />
+                <label for="faq26" class="faq-header">
+                    <span>26. What is the difference between 'element.nextSibling' and
+                        'element.nextElementSibling'?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.nextSibling' returns the next node, while 'element.nextElementSibling' returns the next
+                    element sibling.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq27" class="toggle" />
+                <label for="faq27" class="faq-header">
+                    <span>27. What does 'element.lastElementChild' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.lastElementChild' returns the last child element of a specified element. It ignores text
+                    nodes and comment nodes,
+                    returning only HTML elements.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq28" class="toggle" />
+                <label for="faq28" class="faq-header">
+                    <span>28. What does 'element.lastChild' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.lastChild' returns the last child node of a specified element. This can be an element node,
+                    a text node, or even
+                    a comment node—not just elements.
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 6: Events -->
+        <div id="events">
+            <h3>Events</h3>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq29" class="toggle" />
+                <label for="faq29" class="faq-header">
+                    <span>29. What does 'element.addEventListener()' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.addEventListener()' attaches an event handler to a specified element, enabling the element
+                    to respond to the event.
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 7: Miscellaneous / Utilities -->
+        <div id="utilities">
+            <h3>Miscellaneous / Utilities</h3>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq30" class="toggle" />
+                <label for="faq30" class="faq-header">
+                    <span>30. What does 'element.style' do in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'element.style' gets or sets the inline CSS styles of an element.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq31" class="toggle" />
+                <label for="faq31" class="faq-header">
+                    <span>31. What does 'document.body' returns in JavaScript?</span>
+                    <span class="icon"></span>
+                </label>
+                <div class="faq-content">
+                    'document.body' returns the body element of the current HTML document.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
