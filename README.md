@@ -29,6 +29,6 @@
 </ul>
 
 <h3>📁 Project Structure:</h3>
-├── index.html          # Main HTML structure with FAQ content <br />
-├── style.css           # CSS file for layout and styling <br />
-└── README.md           # Project documentation <br />
+├── index.html                  # Main HTML structure with FAQ content <br />
+├── style.css                   # CSS file for layout and styling <br />
+└── README.md                   # Project documentation <br />
