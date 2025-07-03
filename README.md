@@ -29,6 +29,12 @@
 </ul>
 
 <h3>📁 Project Structure:</h3>
-├── index.html                  # Main HTML structure with FAQ content <br />
-├── style.css                   # CSS file for layout and styling <br />
-└── README.md                   # Project documentation <br />
+├── index.html <br />
+├── style.css <br />
+└── README.md
+
+<h3>📌 How to Use:</h3>
+<ol start="1">
+  <li>Clone the repository</li>
+  <li>Open index.html in your browser</li>
+</ol>
