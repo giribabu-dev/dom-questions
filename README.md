@@ -34,7 +34,11 @@
 └── README.md
 
 <h3>📌 How to Use:</h3>
-<ol start="1">
-  <li>Clone the repository</li>
-  <li>Open index.html in your browser</li>
-</ol>
+<div>
+  <div>1. Clone the repository</div>
+  <p>     git clone https://github.com/your-username/dom-faq-explorer.git</p>
+</div>
+<div>
+  <div>2. Open index.html in your browser</div>
+  <p>     Simply double-click or use Live Server in VS Code.</p>
+</div>
