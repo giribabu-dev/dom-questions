@@ -8,7 +8,7 @@
   <li>Clean sidebar navigation with section-based anchors</li>
   <li>Expandable/collapsible FAQ items</li>
   <li>Categorized content covering:</li>
-  <ol>
+  <ul style="disc">
     <li>DOM Element Selection</li>
     <li>Creation and Insertion</li>
     <li>Modification</li>
@@ -16,6 +16,6 @@
     <li>DOM Traversal</li>
     <li>Events</li>
     <li>Miscellaneous/Utility Methods</li>
-  </ol>
+  </ul>
   <li>Responsive and beginner-friendly UI</li>
 </ul>
