@@ -34,11 +34,25 @@
 └── README.md
 
 <h3>📌 How to Use:</h3>
-<div>
-  <div>1. Clone the repository</div>
-  <p>     git clone https://github.com/your-username/dom-faq-explorer.git</p>
-</div>
-<div>
-  <div>2. Open index.html in your browser</div>
-  <p>     Simply double-click or use Live Server in VS Code.</p>
-</div>
+<ol start="1">
+  <li>
+    Clone the repository <br />
+     git clone https://github.com/your-username/dom-faq-explorer.git 
+  </li>
+  <li>
+    Open index.html in your browser <br />
+      Simply double-click or use Live Server in VS Code.
+  </li>   
+</ol>
+
+<h3>🧠 Topics Covered:</h3>
+<div>Here’s a quick glance at what's included:</div>
+<ul>
+  <li><b>Element Selectors:</b> querySelector, getElementById, getElementsByClassName, etc.</li>
+  <li><b>Element Creation:</b> createElement, appendChild, removeChild, etc.</li>
+  <li><b>Modifying Content:</b> innerHTML, textContent, remove()</li>
+  <li><b>Attributes & Classes:</b> setAttribute, classList.add, hasAttribute, etc.</li>
+  <li><b>DOM Traversal:</b> children, firstChild, nextSibling, etc.</li>
+  <li><b>Events:</b> addEventListener</li>
+  <li><b>Utilities:</b> style, document.body, etc.</li>
+</ul>
