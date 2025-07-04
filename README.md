@@ -37,11 +37,11 @@
 <ol start="1">
   <li>
     Clone the repository <br />
-     git clone https://github.com/your-username/dom-faq-explorer.git 
+        git clone https://github.com/your-username/dom-faq-explorer.git 
   </li>
   <li>
     Open index.html in your browser <br />
-      Simply double-click or use Live Server in VS Code.
+        Simply double-click or use Live Server in VS Code.
   </li>   
 </ol>
 
